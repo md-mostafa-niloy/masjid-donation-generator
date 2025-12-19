@@ -25,7 +25,7 @@
 ## 📂 Project Structure
 
 ```bash
-visernic-donation-manager/
+masjid-donation-manager/
 │
 ├── assets/
 │   ├── css/
