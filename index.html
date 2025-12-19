@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visernic Donation Manager</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Masjid Donation Report Generator</h2>
+    
+    <div class="controls">
+        <div class="input-group">
+            <label>Target Amount (BDT)</label>
+            <input type="number" id="targetAmount" value="3000" placeholder="e.g. 50000">
+        </div>
+        <div class="input-group">
+            <label>Masjid Name</label>
+            <input type="text" id="masjidName" value="Central Jamia Masjid">
+        </div>
+        <div class="input-group">
+            <label>Start Date</label>
+            <input type="date" id="startDate">
+        </div>
+        <div class="input-group">
+            <label>End Date</label>
+            <input type="date" id="endDate">
+        </div>
+    </div>
+
+    <div class="actions">
+        <button class="btn-gen" onclick="generateData()">
+            <span>🔄</span> Generate Data
+        </button>
+        <button class="btn-pdf" onclick="generatePDF()">
+            <span>⬇️</span> Download PDF Report
+        </button>
+    </div>
+
+    <div class="table-wrapper">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Donor Name</th>
+                    <th>Email (Hidden)</th>
+                    <th>Country</th>
+                    <th>Date</th>
+                    <th>Amount (BDT)</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="hidden-assets" style="position: absolute; left: -9999px; top: -9999px; visibility: hidden;">
+    <canvas id="logoCanvas"></canvas>
+    <img id="sourceLogo" src="assets/images/visernic-logo.svg" alt="Logo Source">
+</div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
