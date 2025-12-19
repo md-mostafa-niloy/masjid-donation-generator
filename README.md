@@ -1,8 +1,8 @@
-# Masjid Donation Manager
+# Masjid Donation Generator
 
 ![Tools Banner](assets/images/seo-banner.png)
 
-**Masjid Donation Manager** is a powerful, web-based tool designed to generate realistic donation data and export professional PDF reports for Masjids and Non-Profit Organizations. Built with modern web technologies, it features PWA capabilities, allowing users to install it as a native app on desktop and mobile devices.
+**Masjid Donation Generator** is a powerful, web-based tool designed to generate realistic donation data and export professional PDF reports for Masjids and Non-Profit Organizations. Built with modern web technologies, it features PWA capabilities, allowing users to install it as a native app on desktop and mobile devices.
 
 ---
 
@@ -25,7 +25,7 @@
 ## 📂 Project Structure
 
 ```bash
-masjid-donation-manager/
+masjid-donation-generator/
 │
 ├── assets/
 │   ├── css/
